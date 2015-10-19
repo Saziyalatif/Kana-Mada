@@ -1,5 +1,40 @@
-.logo{
+h1{
     position:relative;
-    background-color:purple;
-    font-size:20px;
+    background-color:#9933CC;
+    width:280px;
+    color: #99FF33;
+    font-size:50px;
+    font-family:hebrew;
 }
+
+.topbar{
+    position:relative;
+    font-size:20px;
+    padding-right:50px;
+    float:right;
+    margin-bottom: 500px;
+    margin-top: -90px;
+    margin-right: 10px;
+}
+
+img{
+	position: relative;
+	width: 260px;
+	height: 300px;
+	border-style: solid;
+	border-color: green;
+}
+
+.foodpictures {
+  display: inline-block;
+  position: absolute;
+  padding:5px;
+  margin-top: 60px;
+  
+
+}
+
+h2{
+margin-top: 450px;
+}
+
