@@ -50,17 +50,25 @@
 		Subject
 	</p>
 
-	<p class="contactdetails">
-		Your message
+	<p class="contactdetails"> Your message
+		<textarea name="message" rows="10" cols="40">
+			Write your message here.
+		</textarea>
+		
 	</p>
 	<p class="contactdetails">
 		What's your interest level with food? (check all that apply)
+		Foodie <input type="checkbox" name="food" value="Foodie">
+		Novice cook<input type="checkbox" name="food" value="Novice cook">
+		Intermediate cook <input type="checkbox" name="food" value="Intermediate cook">
+		Master cook <input type="checkbox" name="food" value="Master cook">
+
 	</p>
 
-	<p class="contactdetails">
-		Submit
-	</p>
-	
+	<form action="dosomething" method="post">
+		<input type="submit" value="Submit!" onclick="submitButton()">
+	</form>
+	<script type="text/javascript" src="scripts/main.js"></script> 
 </body>
 
 </html>

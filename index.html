@@ -8,7 +8,7 @@
     <link rel="stylesheet" type= "text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    
     
     
     <title> Kana Mada </title>
@@ -17,13 +17,34 @@
 
 <body>
     
-        <h1>Kana Mada</h1>
+    <h1>Kana Mada</h1>
+    <header>
+            <form>
+                Username: <input type="text" name="username" size="15px">
+                Password: <input type="password" name="password" size="15px" >
+            </form>
+    </header>
         <span class ="topbar">
-        <table border= "2px" width="200px" cellpadding="10px" cellspacing="5px">
+        <table border= "2px" width="400px" cellpadding="10px" cellspacing="3px">
             <tr>
                 <span class ="topbar"> <td> <a href="#Aboutme">About </a></td> </span>
-                <span class ="topbar"> <td>Pictures</td></span>
-                <span class ="topbar"> <td> <a href="contact.html">Contact</a></td></span>
+                <span class ="topbar"> 
+                        <form> 
+                            <td> Pictures
+                                <select name="Pictures">
+                                    <option value="Baking">Baking</option>
+                                    <option value="Cooking1">Indian Cooking</option>
+                                    <option value="Cooking2">Non-Indian Cooking</option>
+
+                                </select> 
+                            </td>
+
+                        </form> 
+                </span>
+                <span class ="topbar"> 
+                    <td> <a href="contact.html">Contact</a>
+                    </td>
+                </span>
             </tr>
         </table>
         </span>
@@ -38,27 +59,39 @@
         <img src="images/foods/thumb_IMG_1363_1024.jpg"/>
     </main>
     
-    <h2>Why do I care about this blog?</h2>
-        <ul class="left">     
-    <a name="Aboutme"> </a>
-            <li>Cooking is fun.</li> 
-            <li>Baking is fun too.</li> 
-            <li>I can use my coding skills here.</li> 
-            <li>It's really pretty.</li> 
-        </ul>
-        
-    <h2 class="right">Why you should care about this blog?</h2>
-        <ul class="rightlist">     
-            <li>Cooking is fun.</li> 
-            <li>Baking is fun too.</li> 
-            <li>It's a real treat for the eye.</li> 
-            <li>It's really pretty.</li> 
-        </ul>
-    <form>
+    <div class="wrapcare">
+        <div class="icare">
+            <h2>Why do I care about this blog?</h2>
+                <ul class="left">     
+                <a name="Aboutme"> </a>
+                    <li>Cooking is fun.</li> 
+                    <li>Baking is fun too.</li> 
+                    <li>I can use my coding skills here.</li> 
+                    <li>It's really pretty.</li> 
+                </ul>
+        </div>
+            
+        <div class="youcare">   
+            <h2 class="right">Why you should care about this blog?</h2>
+                <ul class="rightlist">     
+                    <li>Cooking is fun.</li> 
+                    <li>Baking is fun too.</li> 
+                    <li>It's a real treat for the eye.</li> 
+                    <li>It's really pretty.</li>   
+                </ul>
+        </div>        
+    </div>  
+
+    <form class="search">
         Search: <input type="text" name="username" size="20" maxlength="10" value="Search Here" />
     </form>
 
+    <p>
+        Submit a recipe here!
+    </p>
+        <input type="file" name="recipefile"/>
 
+    <script type="text/javascript" src="scripts/main.js"></script>    
 </body>
 
 </html>
