@@ -33,13 +33,30 @@ img{
 }
 
 
-.foodpictures {
+/*.foodpictures {
   display: inline-block;
   position: absolute;
   padding:5px;
   margin-top: 60px;
 }
+*/
 
+.foodpictures{
+	position: relative;
+	height: 300px;
+	width: 500px;
+}
+
+.foodpictures img{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	z-index: -2;
+}
+
+.foodpictures img.top{
+	z-index: -1;
+}	
 
 h2{
 	position: relative;

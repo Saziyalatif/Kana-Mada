@@ -5,6 +5,19 @@ h2{
 	color: #006600;
 }
 
-.message{
+.contactdetails{
+	position: relative;
+	margin-left: 20px;
+
+}
+
+.textarea{
+	position: relative;
+	margin-left: 30px;
 	
+}
+
+form{
+	position: relative;
+	margin-left: 20px;
 }
