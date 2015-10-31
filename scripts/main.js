@@ -5,13 +5,13 @@ function submitButton () {
 }
 
 // first image=class top
-$function (){
+$(function (){
 	$(".foodpictures img:first").addClass("top");
 
 //change the image index
 var change = function () {
-	var current = $(".foodpictures img.top");
-	var next = current.next();
+	var curr = $(".foodpictures img.top");
+	var next = curr.next();
 
 // if next image is not there
 //set the top class to the first image
@@ -23,9 +23,9 @@ var change = function () {
 			next = $(".foodpictures img:first");
 			next.addClass("top");
 
-			current.animate({opacity:0.0},1000, function(){
-			current.removeClass("top");
-			current.css({opacity:1.0});
+			curr.animate({opacity:0.0},1000, function(){
+				curr.removeClass("top");
+				curr.css({opacity:1.0});
 			}); 
 
 	} else {
@@ -37,11 +37,12 @@ var change = function () {
 		next.css({opacity:0.0})
 		.addClass("top")
 		.animate({opacity:1.0},1000,function(){
-			current.removeClass("top");
+			curr.removeClass("top");
 		});
 	}
 			
 }
+// repeat every 3 seconds
 	setInterval(change, 3000);
 });	
 
