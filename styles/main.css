@@ -21,8 +21,14 @@ body{
     margin-bottom: 500px;
     margin-top: -90px;
     margin-right: 10px;
+
+}
+.topbar + td{
+	font-family:hebrew;
+    color: #006600;
 }
 
+	
 img{
 	position: relative;
 	width: 400px;
@@ -45,7 +51,8 @@ img{
 	position: relative;
 	height: 300px;
 	width: 500px;
-	margin: 20px 50px -200px 400px;
+	margin: 20px 50px -200px 100px;
+	
 }
 
 .foodpictures img{
@@ -63,8 +70,6 @@ h2{
 	position: relative;
 	margin-top: 400px;
 	color: #006600;
-
-
 }
 
 body{
@@ -93,28 +98,6 @@ table{
 	color: #99FF33;
 }
 
-.left{
-	list-style-type: circle;
-	margin-top: 20px;
-	
-}
-
-.right{
-	margin-top: 100px;
-}
-
-.rightlist li{
-	/*list-style-image: url("../images/purple-arrow.svg");*/
-    list-style-image:url("../images/purple-arrow1.png");
-    
-}
-
-.right .rightlist{
-	position:absolute;
-	bottom: 500px;
-	top: 50px;
-}
-
 .search{
 	position: absolute;
 	top:150px;
@@ -122,28 +105,48 @@ table{
 	
 }
 
-.wrapcare{
-	height: 500px;
-	margin-bottom: 100px;
-}
-
 .icare{
-	display: table-cell;
-	margin-right: 50px;
+	position: relative;
+	margin: 0px -50px -50px 650px;
+	font-family: arial;
+
 	
 }
-.youcare{
-	display: table-cell;
-	margin-right: -50px;
-
+.hello img{
+	width: 100px;
+	height: 30px;
+	border:none;
+	position: relative;
+	float: right;
+	background: transparent;
+	margin: -150px 100px 5px -10px;
 }
 
 
+.submit{
+	position: relative;
+	margin: 300px 0px 20px 10px;
 
+}
 
+.bio{
+	position: relative;
+	text-align: justify;
+	height: 100px;
+	width: 400px;
+	font-size: 15px;
+	margin: -100px 180px 5px -80px;
+}
 
+.secondhr{
+	-webkit-transform: rotate(90deg);
+	position: relative;
+	margin: 120px -50px 0px 300px;
+	height: 100%;
+	
+	
 
-
+}
 
 
 
